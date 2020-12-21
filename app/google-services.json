@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "452255765178",
+    "project_id": "dspfirebase-feaa2",
+    "storage_bucket": "dspfirebase-feaa2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452255765178:android:496aa70242bfe1dba46883",
+        "android_client_info": {
+          "package_name": "com.example.dspfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452255765178-7pmo1vlgkcsgvkt1ub7vghvfe8tgq7pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6fsMgUomyE0ypNyZVBnmCLUb9uooDmn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452255765178-7pmo1vlgkcsgvkt1ub7vghvfe8tgq7pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
