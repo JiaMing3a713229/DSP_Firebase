@@ -48,100 +48,104 @@
             android:textSize="18sp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="360dp"
+            android:layout_height="470dp"
             android:orientation="vertical"
             android:layout_gravity="center"
             >
-            <ImageView
-                android:id="@+id/garden_imgview"
+            <WebView
+                android:id="@+id/garden_webview"
                 android:layout_width="360dp"
                 android:layout_height="470dp"
-                android:src="@drawable/gardendeal"
-                android:scaleType="centerCrop"
-                android:background="@drawable/circle_shape"/>
+                >
+
+
+            </WebView>
 
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/temperaturw_deal"
-                />
-            <TextView
-                android:id="@+id/garden_temp1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-
-                android:text="目前溫度:"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/garden_temp_result"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="100"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/garden_temp2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="度"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/humiditydeal"
-                />
-            <TextView
-                android:id="@+id/garden_hum1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-
-                android:text="目前濕度:"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/garden_hum_result2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="68"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/garden_hum3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="%"
-                android:textSize="18sp" />
 
 
-        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/button_temp"
+            android:layout_width="68dp"
+            android:layout_height="65dp"
+            android:background="#00BCD4"
+            android:fontFamily="@font/noto_sans"
+            android:text="溫度"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:onClick="btn_temp"
+            >
+
+        </Button>
+        <Button
+            android:id="@+id/button_humidity"
+            android:layout_width="68dp"
+            android:layout_height="65dp"
+            android:background="#00BCD4"
+            android:fontFamily="@font/noto_sans"
+            android:text="濕度"
+            android:textSize="10sp"
+            android:layout_weight="1">
+
+        </Button>
+        <Button
+            android:id="@+id/button_pm"
+            android:layout_width="68dp"
+            android:layout_height="65dp"
+            android:background="#00BCD4"
+            android:fontFamily="@font/noto_sans"
+            android:text="PM"
+            android:textSize="10sp"
+            android:layout_weight="1">
+
+        </Button>
+
+        <Button
+            android:id="@+id/button_purple"
+            android:layout_width="68dp"
+            android:layout_height="65dp"
+            android:background="#00BCD4"
+            android:fontFamily="@font/noto_sans"
+            android:text="紫外線"
+            android:textSize="10sp"
+            android:layout_weight="1">
+
+        </Button>
+        <Button
+            android:id="@+id/button_rain"
+            android:layout_width="68dp"
+            android:layout_height="65dp"
+            android:background="#00BCD4"
+            android:fontFamily="@font/noto_sans"
+            android:text="雨水"
+            android:textSize="10sp"
+            android:layout_weight="1">
+
+        </Button>
+        <Button
+            android:id="@+id/button_rain_level"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:background="#00BCD4"
+            android:fontFamily="@font/noto_sans"
+            android:text="水位"
+            android:textSize="10sp"
+            android:layout_weight="1">
+
+        </Button>
+
 
     </LinearLayout>
 </RelativeLayout>

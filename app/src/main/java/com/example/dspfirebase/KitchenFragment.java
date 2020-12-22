@@ -45,8 +45,8 @@ public class KitchenFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 //home_temp=snapshot.child("home_temp").getValue().toString();
                 //home_hum=snapshot.child("home_hum").getValue().toString();
-                kitchen_temp=snapshot.child("Kitchen_temperature").getValue().toString();
-                kitchen_hum=snapshot.child("Kitchen_humidity").getValue().toString();
+                kitchen_temp=snapshot.child("Kitchen_Temperature").getValue().toString();
+                kitchen_hum=snapshot.child("Kitchen_Humidity").getValue().toString();
                 textView9.setText(kitchen_temp);
                 textView10.setText(kitchen_hum);
             }

@@ -43,7 +43,7 @@ public class BadroomFragment extends Fragment {
         dref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                bad_temp=snapshot.child("Bedroom_temperature").getValue().toString();
+                bad_temp=snapshot.child("Bedroom_Temperature").getValue().toString();
                 bad_hum=snapshot.child("Bedroom_Humidity").getValue().toString();
                 textView.setText(bad_temp);
                 textView1.setText(bad_hum);
