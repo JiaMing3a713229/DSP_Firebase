@@ -25,6 +25,8 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     private String home_temp;
     private String home_hum;
+    private String home_pm25;
+    private String home_earthquake;
     DatabaseReference dref;
     @Nullable
     @Override
@@ -38,6 +40,8 @@ public class HomeFragment extends Fragment {
 
         final TextView textView3= root.findViewById(R.id.home_temp_result);
         final TextView textView4 = root.findViewById(R.id.home_hum_result2);
+        final TextView textView_living_pm25= root.findViewById(R.id.home_pm25_result);
+        final TextView textView_living_earthquake = root.findViewById(R.id.home_earthquake_result);
 
         dref = FirebaseDatabase.getInstance().getReference();
         dref.addValueEventListener(new ValueEventListener() {
@@ -47,8 +51,13 @@ public class HomeFragment extends Fragment {
                 //home_hum=snapshot.child("home_hum").getValue().toString();
                 home_temp=snapshot.child("Livingroom_Temperature").getValue().toString();
                 home_hum=snapshot.child("Livingroom_Humidity").getValue().toString();
+                home_pm25=snapshot.child("Livingroom_PM25").getValue().toString();
+                home_earthquake=snapshot.child("Livingroom_Earthquake").getValue().toString();
+
                 textView3.setText(home_temp);
                 textView4.setText(home_hum);
+                textView_living_pm25.setText(home_pm25);
+                textView_living_earthquake.setText(home_earthquake);
             }
 
             @Override

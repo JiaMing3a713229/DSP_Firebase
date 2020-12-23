@@ -55,7 +55,7 @@
             <ImageView
                 android:id="@+id/kitchen_imgview"
                 android:layout_width="360dp"
-                android:layout_height="470dp"
+                android:layout_height="420dp"
                 android:src="@drawable/kitchendeal"
                 android:scaleType="centerCrop"
                 android:background="@drawable/circle_shape"/>
@@ -64,7 +64,7 @@
 
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center"
@@ -104,7 +104,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center">
@@ -144,6 +144,131 @@
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/co2deal"
+                >
+
+            </ImageView>
+            <TextView
+                android:id="@+id/kitchen_co2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+
+                android:text="二氧化碳(MG811):"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kitchen_co2_result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="left"
+                android:text="68"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/mq2deal"
+                >
+
+            </ImageView>
+            <TextView
+                android:id="@+id/kitchen_MQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+
+                android:text="煙霧(MQ2):"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kitchen_MQ2_result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="left"
+                android:text="68"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/mq4deal"
+                >
+
+            </ImageView>
+            <TextView
+                android:id="@+id/kitchen_mq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+
+                android:text="天然氣(MQ4):"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kitchen_mq4_result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="left"
+                android:text="68"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/co"
+                >
+
+            </ImageView>
+            <TextView
+                android:id="@+id/kitchen_co"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+
+                android:text="一氧化碳(MQ7):"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kitchen_co_result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="left"
+                android:text="68"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 </RelativeLayout>

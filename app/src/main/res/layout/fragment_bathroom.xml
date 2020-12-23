@@ -141,6 +141,38 @@
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/co"
+                />
+            <TextView
+                android:id="@+id/bath_co1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+
+                android:text="一氧化碳(MQ7):"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/bath_co1_result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="left"
+                android:text="68"
+                android:textSize="18sp" />
+
+
+
+
+        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>

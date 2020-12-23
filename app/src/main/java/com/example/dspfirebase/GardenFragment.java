@@ -28,8 +28,8 @@ public class GardenFragment extends Fragment {
 
     private GardenViewModel gardenViewModel;
     private View view;
-    private String Garden_temp;
-    private String Garden_hum;
+    //private String Garden_temp;
+    //private String Garden_hum;
     private WebView webView;
     private Button button1;
     private Button button2;
@@ -37,7 +37,7 @@ public class GardenFragment extends Fragment {
     private Button button4;
     private Button button5;
     private Button button6;
-    DatabaseReference dref;
+    //DatabaseReference dref;
 
     @Nullable
     @Override

@@ -25,6 +25,10 @@ public class KitchenFragment extends Fragment {
     private KitchenViewModel kitchenViewModel;
     private String kitchen_temp;
     private String kitchen_hum;
+    private String kitchen_MG811;
+    private String kitchen_MQ2;
+    private String kitchen_MQ4;
+    private String kitchen_MQ7;
     DatabaseReference dref;
     @Nullable
     @Override
@@ -38,6 +42,10 @@ public class KitchenFragment extends Fragment {
 
         final TextView textView9= root.findViewById(R.id.kitchen_temp_result);
         final TextView textView10 = root.findViewById(R.id.kitchen_hum_result2);
+        final TextView textView_kit_MG811= root.findViewById(R.id.kitchen_co2_result2);
+        final TextView textView_kit_MQ2 = root.findViewById(R.id.kitchen_MQ2_result2);
+        final TextView textView_kit_MQ4 = root.findViewById(R.id.kitchen_mq4_result2);
+        final TextView textView_kit_MQ7 = root.findViewById(R.id.kitchen_co_result2);
 
         dref = FirebaseDatabase.getInstance().getReference();
         dref.addValueEventListener(new ValueEventListener() {
@@ -47,8 +55,16 @@ public class KitchenFragment extends Fragment {
                 //home_hum=snapshot.child("home_hum").getValue().toString();
                 kitchen_temp=snapshot.child("Kitchen_Temperature").getValue().toString();
                 kitchen_hum=snapshot.child("Kitchen_Humidity").getValue().toString();
+                kitchen_MG811=snapshot.child("Kitchen_MG811").getValue().toString();
+                kitchen_MQ2=snapshot.child("Kitchen_MQ2").getValue().toString();
+                kitchen_MQ4=snapshot.child("Kitchen_MQ4").getValue().toString();
+                kitchen_MQ7=snapshot.child("Kitchen_MQ7").getValue().toString();
                 textView9.setText(kitchen_temp);
                 textView10.setText(kitchen_hum);
+                textView_kit_MG811.setText(kitchen_MG811);
+                textView_kit_MQ2.setText(kitchen_MQ2);
+                textView_kit_MQ4.setText(kitchen_MQ4);
+                textView_kit_MQ7.setText(kitchen_MQ7);
             }
 
             @Override
