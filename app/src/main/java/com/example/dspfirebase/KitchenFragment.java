@@ -23,12 +23,14 @@ import java.util.Random;
 public class KitchenFragment extends Fragment {
 
     private KitchenViewModel kitchenViewModel;
+
     private String kitchen_temp;
     private String kitchen_hum;
     private String kitchen_MG811;
     private String kitchen_MQ2;
     private String kitchen_MQ4;
     private String kitchen_MQ7;
+    private String kitchen_Earthquake;
     DatabaseReference dref;
     @Nullable
     @Override
@@ -46,7 +48,7 @@ public class KitchenFragment extends Fragment {
         final TextView textView_kit_MQ2 = root.findViewById(R.id.kitchen_MQ2_result2);
         final TextView textView_kit_MQ4 = root.findViewById(R.id.kitchen_mq4_result2);
         final TextView textView_kit_MQ7 = root.findViewById(R.id.kitchen_co_result2);
-
+        final TextView textView_kit_Earthquake = root.findViewById(R.id.kitchen_earthquake_result2);
         dref = FirebaseDatabase.getInstance().getReference();
         dref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -59,12 +61,14 @@ public class KitchenFragment extends Fragment {
                 kitchen_MQ2=snapshot.child("Kitchen_MQ2").getValue().toString();
                 kitchen_MQ4=snapshot.child("Kitchen_MQ4").getValue().toString();
                 kitchen_MQ7=snapshot.child("Kitchen_MQ7").getValue().toString();
+                kitchen_Earthquake=snapshot.child("Kitchen_Earthquake").getValue().toString();
                 textView9.setText(kitchen_temp);
                 textView10.setText(kitchen_hum);
                 textView_kit_MG811.setText(kitchen_MG811);
                 textView_kit_MQ2.setText(kitchen_MQ2);
                 textView_kit_MQ4.setText(kitchen_MQ4);
                 textView_kit_MQ7.setText(kitchen_MQ7);
+                textView_kit_Earthquake.setText(kitchen_Earthquake);
             }
 
             @Override

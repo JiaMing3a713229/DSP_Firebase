@@ -16,8 +16,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/noto_sans"
             android:gravity="center"
-            android:text="比賽名稱"
-            android:textSize="18sp" />
+            android:text="教育部第16屆數位信號處理創思設計競賽"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/badroom_team"
@@ -25,26 +25,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/noto_sans"
             android:gravity="center"
-            android:text="隊伍名稱"
-            android:textSize="18sp" />
+            android:text="基於物聯網(IOT)之居家⻑照與數據整合之應⽤"
+            android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/badroom_work"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/noto_sans"
-            android:gravity="center"
-            android:text="作品名稱"
-            android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/badroom_number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/noto_sans"
-            android:gravity="center"
-            android:text="組員:"
-            android:textSize="18sp" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +38,7 @@
             <ImageView
                 android:id="@+id/badroom_imgview"
                 android:layout_width="360dp"
-                android:layout_height="470dp"
+                android:layout_height="500dp"
                 android:src="@drawable/badroomdeal"
                 android:scaleType="centerCrop"
                 android:background="@drawable/circle_shape"/>
@@ -64,10 +48,10 @@
 
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            >
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
@@ -79,11 +63,11 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/noto_sans"
 
-                android:text="目前濕度:"
+                android:text="溫度："
                 android:textSize="18sp" />
             <TextView
                 android:id="@+id/bad_temp_result"
-                android:layout_width="50dp"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/noto_sans"
                 android:gravity="left"
@@ -100,10 +84,10 @@
 
         </LinearLayout>
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            >
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
@@ -115,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/noto_sans"
 
-                android:text="目前溫度:"
+                android:text="濕度："
                 android:textSize="18sp" />
             <TextView
                 android:id="@+id/bad_hum_result2"
@@ -137,10 +121,10 @@
 
         </LinearLayout>
         '<LinearLayout
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        >
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
@@ -152,7 +136,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/noto_sans"
 
-            android:text="煙霧(MQ2):"
+            android:text="煙霧(MQ2)："
             android:textSize="18sp" />
         <TextView
             android:id="@+id/bad_mq2_result"
@@ -167,10 +151,10 @@
     </LinearLayout>
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            >
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
@@ -182,7 +166,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/noto_sans"
 
-                android:text="地震警戒:"
+                android:text="地震警戒："
                 android:textSize="18sp" />
             <TextView
                 android:id="@+id/bad_Earthquake_result"
