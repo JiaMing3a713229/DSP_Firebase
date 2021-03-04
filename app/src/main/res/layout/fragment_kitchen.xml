@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <LinearLayout
@@ -29,256 +31,444 @@
             android:text="基於物聯網(IOT)之居家⻑照與數據整合之應⽤"
             android:textSize="16sp" />
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="360dp"
-            android:layout_height="390dp"
+            android:layout_height="450dp"
             android:orientation="vertical"
             android:layout_gravity="center"
             android:background="@drawable/kitchendeal"
-            >
-
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
 
             >
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/temperaturw_deal"
-                />
-            <TextView
-                android:id="@+id/kitchen_temp1"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:fontFamily="@font/noto_sans"
 
-                android:text="溫度："
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/kitchen_temp_result"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="100"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/kitchen_temp2"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="度"
-                android:textSize="16sp" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#FFEEDD">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/temperaturw_deal"
+                            />
+                        <TextView
+                            android:id="@+id/kitchen_temp1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:fontFamily="@font/noto_sans"
 
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/humiditydeal"
-                >
-
-            </ImageView>
-            <TextView
-                android:id="@+id/kitchen_hum1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-
-                android:text="濕度："
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/kitchen_hum_result2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="68"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/kitchen_hum3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="%"
-                android:textSize="16sp" />
+                            android:text="溫度："
+                            android:textSize="28sp" />
 
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/co2deal"
-                >
 
-            </ImageView>
-            <TextView
-                android:id="@+id/kitchen_co2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
 
-                android:text="二氧化碳(MG811)："
-                android:textSize="16sp" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/kitchen_temp_result"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="100"
+                                android:layout_toLeftOf="@+id/kitchen_temp2"
+                                android:textSize="45sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/kitchen_temp2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="  度"
+                                android:textSize="30sp" />
+                        </RelativeLayout>
 
-            <TextView
-                android:id="@+id/kitchen_co2_result2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="68"
-                android:textSize="16sp" />
+                    </LinearLayout>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/mq2deal"
-                >
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#FFEEDD">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/humiditydeal"
+                            >
 
-            </ImageView>
-            <TextView
-                android:id="@+id/kitchen_MQ2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/kitchen_hum1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans"
 
-                android:text="煙霧(MQ2)："
-                android:textSize="16sp" />
+                            android:text="濕度："
+                            android:textSize="28sp" />
 
-            <TextView
-                android:id="@+id/kitchen_MQ2_result2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="68"
-                android:textSize="16sp" />
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/mq4deal"
-                >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/kitchen_hum_result2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="68"
+                                android:textSize="45sp"
+                                android:layout_toLeftOf="@+id/kitchen_hum3"
+                                android:textStyle="bold"/>
 
-            </ImageView>
-            <TextView
-                android:id="@+id/kitchen_mq4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
+                            <TextView
+                                android:id="@+id/kitchen_hum3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="  %"
+                                android:textSize="30sp" />
+                        </RelativeLayout>
 
-                android:text="天然氣(MQ4)："
-                android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/kitchen_mq4_result2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="68"
-                android:textSize="16sp" />
+                    </LinearLayout>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/co"
-                >
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#FFEEDD">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/co2deal"
+                            >
 
-            </ImageView>
-            <TextView
-                android:id="@+id/kitchen_co"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
+                        </ImageView>
 
-                android:text="一氧化碳(MQ7)："
-                android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/kitchen_co_result2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="68"
-                android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/kitchen_co2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="二氧化碳："
+                            android:textSize="25sp" />
 
-        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/kitchen_co2_result2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:layout_toLeftOf="@+id/kitchen_co2_result23"
+                                android:text="68"
+                                android:textSize="45sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/kitchen_co2_result23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="     "
+                                android:textSize="30sp" />
+                        </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/earthquakedeal"
-                >
+                    </LinearLayout>
 
-            </ImageView>
-            <TextView
-                android:id="@+id/kitchen_earthquake"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#FFEEDD">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/mq2deal"
+                            >
 
-                android:text="地震警戒："
-                android:textSize="16sp" />
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/kitchen_MQ2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="煙霧(MQ2)："
+                            android:textSize="28sp" />
 
-            <TextView
-                android:id="@+id/kitchen_earthquake_result2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-                android:gravity="left"
-                android:text="68"
-                android:textSize="16sp" />
 
-        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/kitchen_MQ2_result2"
+                                android:layout_width="42dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/kitchen_MQ2result23"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="68"
+                                android:textSize="45sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/kitchen_MQ2result23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="   "
+                                android:textSize="30sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#FFEEDD">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/mq4deal"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/kitchen_mq4"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="天然氣："
+                            android:textSize="28sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/kitchen_mq4_result2"
+                                android:layout_width="42dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/kitchen_mq4result23"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="68"
+                                android:textSize="45sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/kitchen_mq4result23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="   "
+                                android:textSize="30sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#FFEEDD">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/co"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/kitchen_co"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="一氧化碳："
+                            android:textSize="28sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/kitchen_co_result2"
+                                android:layout_width="42dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/kitchen_coresult23"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="68"
+                                android:textSize="45sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/kitchen_coresult23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="   "
+                                android:textSize="30sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#FFEEDD">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/earthquakedeal"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/kitchen_earthquake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="地震警戒："
+                            android:textSize="28sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/kitchen_earthquake_result2"
+                                android:layout_width="42dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/kitchen_earthquakeresult23"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="68"
+                                android:textSize="45sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/kitchen_earthquakeresult23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="   "
+                                android:textSize="30sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#B9B9FF">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="廚房Kitchen"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
 
 
     </LinearLayout>
