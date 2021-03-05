@@ -84,7 +84,7 @@
                                 android:fontFamily="@font/noto_sans"
                                 android:text="100"
                                 android:layout_toLeftOf="@+id/bad_temp2"
-                                android:textSize="45sp"
+                                android:textSize="40sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:id="@+id/bad_temp2"
@@ -139,7 +139,7 @@
                                 android:fontFamily="@font/noto_sans"
                                 android:text="70"
                                 android:layout_toLeftOf="@+id/bad_hum3"
-                                android:textSize="45sp"
+                                android:textSize="40sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:id="@+id/bad_hum3"
@@ -194,7 +194,7 @@
                                 android:fontFamily="@font/noto_sans"
                                 android:text="70"
                                 android:layout_toLeftOf="@+id/bad_mq23"
-                                android:textSize="45sp"
+                                android:textSize="40sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:id="@+id/bad_mq23"
@@ -249,7 +249,7 @@
                                 android:fontFamily="@font/noto_sans"
                                 android:text="0"
                                 android:layout_toLeftOf="@+id/bad_Earthquake23"
-                                android:textSize="45sp"
+                                android:textSize="40sp"
                                 android:textStyle="bold"/>
                             <TextView
                                 android:id="@+id/bad_Earthquake23"
