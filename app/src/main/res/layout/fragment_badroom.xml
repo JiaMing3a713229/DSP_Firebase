@@ -170,7 +170,7 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/mq2deal"
+                            android:src="@drawable/fireicon"
                             />
                         <TextView
                             android:id="@+id/bad_mq2"
