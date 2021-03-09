@@ -57,6 +57,8 @@ public class HomeFragment extends Fragment {
     FusedLocationProviderClient fusedLocationProviderClient;
     TextView textView_living_GPS;
     TextView textView_living_longitude;
+    private String Latitude;
+    private String Longitude;
 
     @Nullable
     @Override
@@ -159,6 +161,10 @@ public class HomeFragment extends Fragment {
                     if (location != null) {
                         textView_living_GPS.setText(String.valueOf(location.getLatitude()));
                         textView_living_longitude.setText(String.valueOf(location.getLongitude()));
+                        Latitude = String.valueOf(location.getLatitude());
+                        Longitude =String.valueOf(location.getLongitude());
+                        dref.child("Longitude").setValue(Longitude);//write GPS location
+                        dref.child("Latitude").setValue(Latitude);//write GPS location
                     } else {
                         LocationRequest locationRequest = new LocationRequest()
                                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
@@ -172,6 +178,10 @@ public class HomeFragment extends Fragment {
                                 Location location1 = locationResult.getLastLocation();
                                 textView_living_GPS.setText(String.valueOf(location.getLatitude()));
                                 textView_living_longitude.setText(String.valueOf(location.getLongitude()));
+                                Latitude = String.valueOf(location.getLatitude());
+                                Longitude =String.valueOf(location.getLongitude());
+                                dref.child("Longitude").setValue(Longitude);//write GPS location
+                                dref.child("Latitude").setValue(Latitude);//write GPS location
                             }
                         };
 
