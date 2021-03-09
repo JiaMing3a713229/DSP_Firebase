@@ -28,6 +28,10 @@ public class HomeFragment extends Fragment {
     private String home_pm25;
     private String home_earthquake;
     DatabaseReference dref;
+
+    //3/8
+    private String home_Crutch_result;
+    private String home_Watch_result;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -42,6 +46,8 @@ public class HomeFragment extends Fragment {
         final TextView textView4 = root.findViewById(R.id.home_hum_result2);
         final TextView textView_living_pm25= root.findViewById(R.id.home_pm25_result);
         final TextView textView_living_earthquake = root.findViewById(R.id.home_earthquake_result);
+        final TextView textView_living_Crutch = root.findViewById(R.id.home_Crutch_result);//3/8
+        final TextView textView_living_Watch = root.findViewById(R.id.home_watch_result);//3/8
 
         dref = FirebaseDatabase.getInstance().getReference();
         dref.addValueEventListener(new ValueEventListener() {
@@ -53,11 +59,14 @@ public class HomeFragment extends Fragment {
                 home_hum=snapshot.child("Livingroom_Humidity").getValue().toString();
                 home_pm25=snapshot.child("Livingroom_PM25").getValue().toString();
                 home_earthquake=snapshot.child("Livingroom_Earthquake").getValue().toString();
-
+                home_Crutch_result=snapshot.child("Crutch_Ultrasound").getValue().toString();//3/8
+                home_Watch_result=snapshot.child("Watch_Heartbeat").getValue().toString();
                 textView3.setText(home_temp);
                 textView4.setText(home_hum);
                 textView_living_pm25.setText(home_pm25);
                 textView_living_earthquake.setText(home_earthquake);
+                textView_living_Crutch.setText(home_Crutch_result);
+                textView_living_Watch.setText(home_Watch_result);
             }
 
             @Override
@@ -65,6 +74,8 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+
 
 
         return root;

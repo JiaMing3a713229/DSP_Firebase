@@ -2,6 +2,7 @@ package com.example.dspfirebase;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -13,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -39,9 +41,15 @@ public class GardenFragment extends Fragment {
     private Button button6;
     //DatabaseReference dref;
 
+    //拐杖
+    private String crutch_distance;
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        //選擇視窗
 
 
 
@@ -134,5 +142,8 @@ public class GardenFragment extends Fragment {
     public void btn_temp(View view){
 
     }
+
+
+
 
 }

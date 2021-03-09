@@ -20,7 +20,8 @@
             android:fontFamily="@font/noto_sans"
             android:gravity="center"
             android:text="教育部第16屆數位信號處理創思設計競賽"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/garden_team"
@@ -29,29 +30,48 @@
             android:fontFamily="@font/noto_sans"
             android:gravity="center"
             android:text="基於物聯網(IOT)之居家⻑照與數據整合之應⽤"
-            android:textSize="16sp" />
-
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
         <LinearLayout
+            android:layout_marginTop="50dp"
             android:layout_width="360dp"
             android:layout_height="450dp"
-            android:layout_gravity="center"
             android:orientation="vertical"
-            android:layout_marginTop="50dp">
+            android:layout_gravity="center"
+            android:background="@color/white"
 
-            <WebView
-                android:id="@+id/garden_webview"
+
+            >
+
+            <RelativeLayout
                 android:layout_width="360dp"
-                android:layout_height="450dp">
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp">
+
+                <WebView
+                    android:id="@+id/garden_webview"
+                    android:layout_width="360dp"
+                    android:layout_height="450dp">
 
 
-            </WebView>
+                </WebView>
+
+
+
+            </RelativeLayout>
+
+
 
         </LinearLayout>
+
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             app:cardCornerRadius="8dp"

@@ -16,8 +16,10 @@
         android:id="@+id/nav_kitchen"
         android:icon="@drawable/kitchen"
         android:title="廚房" />
+
     <item
         android:id="@+id/nav_garden"
         android:icon="@drawable/garden"
         android:title="戶外" />
+
 </menu>

@@ -1,5 +1,6 @@
 package com.example.dspfirebase;
 
+import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Random;
 
-public class KitchenFragment extends Fragment {
+public class KitchenFragment extends Fragment  {
 
     private KitchenViewModel kitchenViewModel;
 
