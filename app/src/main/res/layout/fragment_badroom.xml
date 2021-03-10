@@ -293,7 +293,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
-                    android:text="臥室Badroom"
+                    android:text="臥室Bedroom"
                     android:textSize="28dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
